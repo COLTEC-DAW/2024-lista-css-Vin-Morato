@@ -1,0 +1,47 @@
+html{
+        font-family: sans-serif;
+    }
+
+body{ 
+        background: linear-gradient(#deffdc,#61c05c) ;
+
+        color:#092208;
+
+        height: 100%;
+        width: 100%;
+
+        
+    }
+
+
+p   {
+    text-indent: 1em;
+}
+
+h1  {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+h2{
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+h3{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+a{
+    color: #00a862;
+}
+
+abbr    {
+    font-family: small-caps;    
+}
+
+.summary {
+    text-align: center;
+    line-height: 1.5rem;
+}
