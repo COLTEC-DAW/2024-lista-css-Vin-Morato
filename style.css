@@ -1,31 +1,44 @@
 html{
         font-family: sans-serif;
-    }
+}
 
 body{ 
-        background: linear-gradient(#deffdc,#61c05c) ;
+    background: linear-gradient(#cdffcb,#61c05c) ;
 
-        color:#092208;
+    color:#092208;
 
-        height: 100%;
-        width: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    max-width: 1280px;
+    width: 80%;
+    height: 100%;
+}
 
-        
-    }
+header {
+    background-color:#092208;
+    color: #61c05c;
+}
 
 
-p   {
+p {
     text-indent: 1em;
+    text-align: center;
 }
 
 h1  {
-        font-size: 1.8rem;
-        text-align: center;
-    }
+    font-size: 1.8rem;
+    text-align: center;
+    display: inline;
+    padding: 1em;
+}
 
 h2{
     font-size: 1.4rem;
     text-align: center;
+    display: inline;
+
 }
 
 h3{
@@ -34,7 +47,7 @@ h3{
 }
 
 a{
-    color: #00a862;
+    color: #007544;
 }
 
 abbr    {
@@ -44,4 +57,57 @@ abbr    {
 .summary {
     text-align: center;
     line-height: 1.5rem;
+}
+
+footer {
+    margin: 4%;
+    text-align: center;
+    
+}
+footer a{
+    border: 2px solid;
+    padding: 0.5em;
+    margin: 10px;
+    color: rgb(8, 50, 128);
+}
+
+.page-wrapper {
+
+    position: relative;
+}
+
+.intro {
+    height: 550px;
+    
+}
+
+#design-archives {
+    display: none;
+}
+
+.zen-resources {
+
+}
+
+li {
+    list-style-type: none;   
+    padding: 1em;
+    text-align: center;
+}
+
+.explanation {
+    width: 60%;
+    margin-right: 35%;
+    border-right: 1px solid #1f295c;
+    padding-right: 2%;
+    padding-top: 8.5%;
+    padding-bottom: 8.5%;
+}
+
+.design-selection{
+    position: absolute;
+    top: 500px;
+    left: 62%;
+    padding: 2%;
+    bottom: 105px;
 }
