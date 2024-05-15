@@ -46,8 +46,19 @@ h3{
     text-align: center;
 }
 
-a{
+a:link{
     color: #007544;
+    font-weight: bold;
+}
+
+a:visited {
+    color: rgb(82, 0, 82);
+    font-weight: normal;
+}
+
+a:hover {
+    background-color: white;
+    color: #1f295c;
 }
 
 abbr    {
@@ -62,6 +73,11 @@ abbr    {
 footer {
     margin: 4%;
     text-align: center;
+
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: wrap;
     
 }
 footer a{
@@ -102,6 +118,11 @@ li {
     padding-right: 2%;
     padding-top: 8.5%;
     padding-bottom: 8.5%;
+    
+}
+
+.design-selection li {
+    border-top: 1px solid #1f295c;
 }
 
 .design-selection{
@@ -110,4 +131,34 @@ li {
     left: 62%;
     padding: 2%;
     bottom: 105px;
+}
+
+.design-selection li:last-child {
+    border-bottom: 1px solid #1f295c;
+}
+
+.main-supporting .explanation :nth-child(2)::first-letter{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 300%;
+    float: left;
+}
+
+
+.benefits {
+    display: flex;
+    
+    flex-grow: 1;
+    flex-flow: wrap;
+}
+
+.benefits h3{
+    text-align: left;
+
+    
+}
+
+.benefits p {
+
+    text-align: right;
+
 }
