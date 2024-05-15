@@ -163,6 +163,7 @@ li {
     text-align: center;
     width: 30%;
     order: 2;
+    align-self: center;
 
     
 }
@@ -184,7 +185,9 @@ li {
 }
 
 .participation h3{
-    width: 40%;
+    align-self: center;
+    text-align: center;
+    width: 50%;
     flex-grow: 1;
     justify-content: center;
     align-items: center;
@@ -194,5 +197,5 @@ li {
 
 .participation p {
     flex-grow: 1;
-    width: 40%;
+    width: 50%;
 }
