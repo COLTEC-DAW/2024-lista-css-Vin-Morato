@@ -3,17 +3,16 @@ html{
 }
 
 body{ 
-    background: linear-gradient(#cdffcb,#61c05c) ;
-
+    background: rgba(red, green, blue, alpha);
+    background:  linear-gradient(#cdffcb,#61c05c);
+    
     color:#092208;
 
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, 0%);
-    max-width: 1280px;
-    width: 80%;
-    height: 100%;
+
 }
 
 header {
@@ -22,26 +21,28 @@ header {
 }
 
 
-p {
+.main p {
     text-indent: 1em;
+    line-height: 1.5;
     text-align: center;
 }
 
-h1  {
+  /* BODY COLOCADO PARA TENTAR CORRIGIR ERROS T2 */
+body h1  {
     font-size: 1.8rem;
     text-align: center;
     display: inline;
     padding: 1em;
 }
 
-h2{
+body h2{
     font-size: 1.4rem;
     text-align: center;
     display: inline;
 
 }
 
-h3{
+body h3{
     font-size: 1.2rem;
     text-align: center;
 }
@@ -62,7 +63,8 @@ a:hover {
 }
 
 abbr    {
-    font-family: small-caps;    
+    font-family: small-caps;  
+    font-variant: small-caps;  
 }
 
 .summary {
@@ -90,11 +92,16 @@ footer a{
 .page-wrapper {
 
     position: relative;
+    max-width: 1280px;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 1em;
 }
 
 .intro {
     height: 550px;
-    
+    text-align: center;
 }
 
 #design-archives {
@@ -105,13 +112,26 @@ footer a{
 
 }
 
-li {
+/* .sidebar li {
     list-style-type: none;   
     padding: 1em;
     text-align: center;
+} */
+
+
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-.explanation {
+.sidebar li {
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+
+/* .explanation {
     width: 60%;
     margin-right: 35%;
     border-right: 1px solid #1f295c;
@@ -119,19 +139,38 @@ li {
     padding-top: 8.5%;
     padding-bottom: 8.5%;
     
-}
+} */
 
 .design-selection li {
     border-top: 1px solid #1f295c;
 }
 
-.design-selection{
+
+/* PARTE DA T4 */
+.explanation { 
+    width: 60%;
+    margin-right: 35%;
+    border-right: 1px solid #1f295c;
+    padding-right: 2%;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.sidebar {
+    position: absolute;
+    top: 560px;
+    left: 62%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+/* .design-selection{ 
     position: absolute;
     top: 500px;
     left: 62%;
     padding: 2%;
     bottom: 105px;
-}
+} */
 
 .design-selection li:last-child {
     border-bottom: 1px solid #1f295c;
