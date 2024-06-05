@@ -231,3 +231,11 @@ li {
     .main p {line-height: 1rem;}
     .intro {height:auto;}
  }
+
+@media print {
+    html{font-family: 'Times New Roman', Times, serif;}
+    header{
+        background-color: #cdffcb;
+        color:#092208
+    }
+}
