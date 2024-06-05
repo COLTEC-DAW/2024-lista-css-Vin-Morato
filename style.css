@@ -3,7 +3,7 @@ html{
 }
 
 body{ 
-    background: linear-gradient(#cdffcb,#97ff93,#61c05c) ;
+    background: linear-gradient(#cdffcb,#61c05c) ;
 
     color:#092208;
 
@@ -11,9 +11,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, 0%);
-    max-width: 1280px;
-    width: 80%;
-    height: 100%;
+
 }
 
 header {
@@ -22,26 +20,28 @@ header {
 }
 
 
-p {
+.main p {
     text-indent: 1em;
+    line-height: 1.5;
     text-align: center;
 }
 
-h1  {
+  /* BODY COLOCADO PARA TENTAR CORRIGIR ERROS T2 */
+body h1  {
     font-size: 1.8rem;
     text-align: center;
     display: inline;
     padding: 1em;
 }
 
-h2{
+body h2{
     font-size: 1.4rem;
     text-align: center;
     display: inline;
 
 }
 
-h3{
+body h3{
     font-size: 1.2rem;
     text-align: center;
 }
@@ -62,7 +62,8 @@ a:hover {
 }
 
 abbr    {
-    font-family: small-caps;    
+    font-family: small-caps;  
+    font-variant: small-caps;  
 }
 
 .summary {
@@ -80,25 +81,34 @@ footer {
 
 
     display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: space-evenly;
-    flex-flow: wrap;
+
+    
+    padding: 0.5em;
+
+    
     
 }
 footer a{
     border: 2px solid;
-    padding: 0.5em;
-    margin: 10px;
     color: rgb(8, 50, 128);
 }
 
 .page-wrapper {
 
     position: relative;
+    max-width: 1280px;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 1em;
 }
 
 .intro {
     height: 550px;
-    
+    text-align: center;
 }
 
 #design-archives {
@@ -109,13 +119,26 @@ footer a{
 
 }
 
-li {
+/* .sidebar li {
     list-style-type: none;   
     padding: 1em;
     text-align: center;
+} */
+
+
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-.explanation {
+.sidebar li {
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+
+/* .explanation {
     width: 60%;
     margin-right: 35%;
     border-right: 1px solid #1f295c;
@@ -123,19 +146,38 @@ li {
     padding-top: 8.5%;
     padding-bottom: 8.5%;
     
-}
+} */
 
 .design-selection li {
     border-top: 1px solid #1f295c;
 }
 
-.design-selection{
+
+/* PARTE DA T4 */
+.explanation { 
+    width: 60%;
+    margin-right: 35%;
+    border-right: 1px solid #1f295c;
+    padding-right: 2%;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.sidebar {
+    position: absolute;
+    top: 560px;
+    left: 62%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+/* .design-selection{ 
     position: absolute;
     top: 500px;
     left: 62%;
     padding: 2%;
     bottom: 105px;
-}
+} */
 
 .design-selection li:last-child {
     border-bottom: 1px solid #1f295c;
@@ -150,33 +192,22 @@ li {
 
 .benefits {
     display: flex;
-    
-    flex-grow: 1;
-    flex-flow:row wrap;
-    text-align: left;
-    flex-direction: row;
+    flex-direction: row-reverse;
 
     border-bottom: 1px solid #1f295c;
     border-top: 1px solid #1f295c;
-
 }
 
 .benefits h3{
     
-    text-align: right;
-    text-align: center;
-    width: 30%;
-    order: 2;
     align-self: center;
+    flex-basis: 30%;
 
     
 }
 
 .benefits p {
-    text-align: left;
-    width: 70%;
-    order: 1;
-
+    flex-basis: 70%;
 }
 
 .participation {
@@ -191,7 +222,7 @@ li {
 .participation h3{
     align-self: center;
     text-align: center;
-    width: 50%;
+    flex: 0 0 50%;
     flex-grow: 1;
     justify-content: center;
     align-items: center;
@@ -203,31 +234,3 @@ li {
     flex-grow: 1;
     width: 50%;
 }
-
- /* ATIVIDADE T6 */
- 
- @media screen and (max-width: 768px) {
-    /* body { font-size: 18px; } */
-    .explanation {border-right: 0;}
-    /* Alinhamento do "So What is This About?" */
-    .design-selection { 
-        vertical-align: baseline;
-        margin: 0;
-        padding: 0;
-        top: 0;
-        bottom: 0;
-        position: static;
-    }
-
-    .participation {
-        flex-flow: column;
-
-    }
-    .participation p{
-        align-self: center;
-        text-align: center;
-    }
-    .summary {line-height: 1rem;}
-    .main p {line-height: 1rem;}
-    .intro {height:auto;}
- }
