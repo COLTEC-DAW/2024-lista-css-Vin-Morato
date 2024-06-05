@@ -208,7 +208,11 @@ li {
  
  @media screen and (max-width: 768px) {
     /* body { font-size: 18px; } */
-    .explanation {border-right: 0;}
+    .explanation {
+        border-right: 0;
+        padding: 0;
+        width: 100%;
+    }
     /* Alinhamento do "So What is This About?" */
     .design-selection { 
         vertical-align: baseline;
