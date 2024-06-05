@@ -3,7 +3,7 @@ html{
 }
 
 body{ 
-    background: linear-gradient(#cdffcb,#61c05c) ;
+    background: linear-gradient(#cdffcb,#97ff93,#61c05c) ;
 
     color:#092208;
 
@@ -67,6 +67,10 @@ abbr    {
 
 .summary {
     text-align: center;
+    line-height: 1.5rem;
+}
+
+.main p {
     line-height: 1.5rem;
 }
 
@@ -199,3 +203,31 @@ li {
     flex-grow: 1;
     width: 50%;
 }
+
+ /* ATIVIDADE T6 */
+ 
+ @media screen and (max-width: 768px) {
+    /* body { font-size: 18px; } */
+    .explanation {border-right: 0;}
+    /* Alinhamento do "So What is This About?" */
+    .design-selection { 
+        vertical-align: baseline;
+        margin: 0;
+        padding: 0;
+        top: 0;
+        bottom: 0;
+        position: static;
+    }
+
+    .participation {
+        flex-flow: column;
+
+    }
+    .participation p{
+        align-self: center;
+        text-align: center;
+    }
+    .summary {line-height: 1rem;}
+    .main p {line-height: 1rem;}
+    .intro {height:auto;}
+ }
