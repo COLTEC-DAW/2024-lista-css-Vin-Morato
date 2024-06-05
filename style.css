@@ -3,7 +3,7 @@ html{
 }
 
 body{ 
-    background: rgba(red, green, blue, alpha);
+    background-color: white;
     background: linear-gradient(#cdffcb,#97ff93,#61c05c) ;
 
     color:#092208;
@@ -71,7 +71,7 @@ abbr    {
     line-height: 1.5rem;
 }
 
-.main p {
+.main {
     line-height: 1.5rem;
 }
 
@@ -131,6 +131,7 @@ li {
 }
 
 .design-selection{
+    position: static;
     position: absolute;
     top: 500px;
     left: 62%;
@@ -233,7 +234,7 @@ li {
         text-align: center;
     }
     .summary {line-height: 1rem;}
-    .main p {line-height: 1rem;}
+    .main {line-height: 1rem;}
     .intro {height:auto;} 
  }
 
