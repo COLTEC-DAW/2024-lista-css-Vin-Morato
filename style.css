@@ -3,6 +3,7 @@ html{
 }
 
 body{ 
+    background: rgba(red, green, blue, alpha);
     background: linear-gradient(#cdffcb,#97ff93,#61c05c) ;
 
     color:#092208;
@@ -207,13 +208,13 @@ li {
  /* ATIVIDADE T6 */
  
  @media screen and (max-width: 768px) {
-    /* body { font-size: 18px; } */
+
     .explanation {
         border-right: 0;
         padding: 0;
         width: 100%;
     }
-    /* Alinhamento do "So What is This About?" */
+
     .design-selection { 
         vertical-align: baseline;
         margin: 0;
@@ -233,13 +234,14 @@ li {
     }
     .summary {line-height: 1rem;}
     .main p {line-height: 1rem;}
-    .intro {height:auto;}
+    .intro {height:auto;} 
  }
 
 @media print {
     html{font-family: 'Times New Roman', Times, serif;}
     header{
-        background-color: #cdffcb;
+        background-color: white;
         color:#092208
     }
+    body {background: rgba(red, green, blue, alpha);}
 }
