@@ -1,0 +1,247 @@
+html{
+        font-family: sans-serif;
+}
+
+body{ 
+    background-color: white;
+    background: linear-gradient(#cdffcb,#97ff93,#61c05c) ;
+
+    color:#092208;
+
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    max-width: 1280px;
+    width: 80%;
+    height: 100%;
+}
+
+header {
+    background-color:#092208;
+    color: #61c05c;
+}
+
+
+p {
+    text-indent: 1em;
+    text-align: center;
+}
+
+h1  {
+    font-size: 1.8rem;
+    text-align: center;
+    display: inline;
+    padding: 1em;
+}
+
+h2{
+    font-size: 1.4rem;
+    text-align: center;
+    display: inline;
+
+}
+
+h3{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+a:link{
+    color: #007544;
+    font-weight: bold;
+}
+
+a:visited {
+    color: rgb(82, 0, 82);
+    font-weight: normal;
+}
+
+a:hover {
+    background-color: white;
+    color: #1f295c;
+}
+
+abbr    {
+    font-family: small-caps;    
+}
+
+.summary {
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.main {
+    line-height: 1.5rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+footer a{
+    border: 2px solid;
+    padding: 0.5em;
+    margin: 10px;
+    color: rgb(8, 50, 128);
+}
+
+.page-wrapper {
+
+    position: relative;
+}
+
+.intro {
+    height: 550px;
+    
+}
+
+#design-archives {
+    display: none;
+}
+
+.zen-resources {
+
+}
+
+li {
+    list-style-type: none;   
+    padding: 1em;
+    text-align: center;
+}
+
+.explanation {
+    width: 60%;
+    margin-right: 35%;
+    border-right: 1px solid #1f295c;
+    padding-right: 2%;
+    padding-top: 8.5%;
+    padding-bottom: 8.5%;
+    
+}
+
+.design-selection li {
+    border-top: 1px solid #1f295c;
+}
+
+.design-selection{
+    position: static;
+    position: absolute;
+    top: 500px;
+    left: 62%;
+    padding: 2%;
+    bottom: 105px;
+}
+
+.design-selection li:last-child {
+    border-bottom: 1px solid #1f295c;
+}
+
+.main-supporting .explanation :nth-child(2)::first-letter{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 300%;
+    float: left;
+}
+
+
+.benefits {
+    display: flex;
+    
+    flex-grow: 1;
+    flex-flow:row wrap;
+    text-align: left;
+    flex-direction: row;
+
+    border-bottom: 1px solid #1f295c;
+    border-top: 1px solid #1f295c;
+
+}
+
+.benefits h3{
+    
+    text-align: right;
+    text-align: center;
+    flex-basis: 30%;
+    order: 2;
+    align-self: center;
+
+    
+}
+
+.benefits p {
+    text-align: left;
+    flex-basis: 70%;
+    order: 1;
+
+}
+
+.participation {
+    display: flex;
+    flex-flow: row wrap;
+
+    border-bottom: 1px solid #1f295c;
+    border-top: 1px solid #1f295c;
+    margin-bottom: -1px;
+}
+
+.participation h3{
+    align-self: center;
+    text-align: center;
+    flex-basis: 50%;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.participation p {
+    flex-grow: 1;
+    flex-basis: 50%;
+    
+}
+
+ /* ATIVIDADE T7 */
+ 
+ @media screen and (max-width: 768px) {
+
+    .explanation {
+        border-right: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .design-selection { 
+        vertical-align: baseline;
+        margin: 0;
+        padding: 0;
+        top: 0;
+        bottom: 0;
+        position: static;
+    }
+
+    .participation {
+        flex-flow: column;
+        
+
+    }
+    .participation p{
+        align-self: center;
+        text-align: center;
+    }
+    .summary {line-height: 1rem;}
+    .main {line-height: 1rem;}
+    .intro {height:auto;} 
+ }
+
+@media print {
+    html{font-family: 'Times New Roman', Times, serif;}
+    header{
+        background-color: white;
+        color:#092208
+    }
+    body {background: rgba(red, green, blue, alpha);}
+}
